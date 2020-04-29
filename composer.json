@@ -1,0 +1,36 @@
+{
+    "name": "skoellen/laravel-occasion-manager",
+    "description": "Manage your events, occasions etc.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stephan Köllen",
+            "email": "stephan.koellen@korono.de"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Skoellen\\LaravelOccasionManager\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Skoellen\\LaravelOccasionManager\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "~3.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Skoellen\\LaravelOccasionManager\\LaravelOccasionManagerServiceProvider"
+            ],
+            "aliases": {
+                "OccasionManager": "Skoellen\\LaravelOccasionManager\\Facade\\OccasionManager"
+            }
+        }
+    }
+}

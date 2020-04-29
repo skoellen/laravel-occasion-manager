@@ -1,0 +1,7 @@
+vendor
+build
+docs
+phpunit.xml
+.env
+composer.lock
+.phpunit.result.cache
